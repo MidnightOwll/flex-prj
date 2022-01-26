@@ -1,7 +1,12 @@
 // Обнуляющие стили
 @import "_nullStyle.scss";
 
-
+%upper-title{
+    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
 body{
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     color: #333333;
@@ -155,7 +160,74 @@ body{
     &__text {
     }
 }
+.vertical {
+    &{
+        padding: 50px 0px;
+    }
 
+    &__title {
+        text-align: center;
+        margin-bottom: 26px;
+    }
+
+    &__body {
+        max-width: 995px;
+        margin: 0 auto;
+    }
+
+    &__row {
+        display: flex;
+        margin: 0 -22.5px;
+    }
+
+    &__column {
+        display: flex;
+        flex:  0 1 33.333%;
+        padding: 22.5px;
+    }
+
+    &__item {
+        display: flex;
+        color: #fff;
+        background-color: #445162;
+        border: 2px solid #445162;
+        border-radius: 5px;
+        flex-direction: column;
+    }
+
+    &__subtitle {
+        padding: 12px 0px;
+        @extend %upper-title;        
+    }
+    &__label{
+        padding: 19px 0px;
+        color: #445162;
+        background-color: #fff;
+        @extend %upper-title;
+    }
+
+    &__text {
+        padding: 20px;
+        flex: 1 1 auto;
+        & p{
+            margin-bottom: 30px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+       
+    }
+    &__btn{
+        padding: 8px 0px;
+        display: block;
+        margin: 20px;
+        background: #fff;
+        color: #445162;
+        text-transform: uppercase;
+        text-align: center;
+        border-radius: 5px;
+    }
+}
 
 .footer {
     
