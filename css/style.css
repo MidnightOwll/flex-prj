@@ -75,6 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 /*----------------*/
 body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #333333;
   font-size: 16px;
   line-height: 24px;
 }
@@ -83,6 +84,12 @@ body {
   max-width: 1185px;
   width: 100%;
   margin: 0 auto;
+}
+
+.title {
+  font-size: 30px;
+  line-height: 36px;
+  color: #445161;
 }
 
 .wrapper {
@@ -129,6 +136,7 @@ body {
 
 .info__body {
   color: #fff;
+  padding-right: 10px;
 }
 
 .info__title {
@@ -151,6 +159,39 @@ body {
   content: url("../img/check_icon.png");
   width: 25px;
   margin-right: 10px;
+}
+
+.about__row {
+  padding: 50px 0px 40px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about__img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 430px;
+          flex: 0 0 430px;
+}
+
+.about__img img {
+  width: 100%;
+}
+
+.about__body {
+  margin-left: 38px;
+}
+
+.about__title {
+  margin-bottom: 28px;
+}
+
+.about__text p {
+  margin-bottom: 31px;
+}
+
+.about__text p:last-child {
+  margin-bottom: 0;
 }
 
 .footer {

@@ -4,6 +4,7 @@
 
 body{
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #333333;
     font-size: 16px;
     line-height: 24px;
 }
@@ -11,6 +12,11 @@ body{
     max-width: 1185px;
     width: 100%;
     margin: 0 auto;
+}
+.title {
+    font-size: 30px;
+        line-height: 36px;
+        color: #445161;
 }
 .wrapper {
     min-height: 100%;
@@ -21,60 +27,100 @@ body{
     flex: 1 1 auto;
 }
 .info {
-    background-color: #8198b8;
+    &{
+        background-color: #8198b8;
+    }
 
-		&__row {
-            padding: 50px 0;
-            display: flex;
-            justify-content: space-between;
-		}
+    &__row {
+        padding: 50px 0;
+        display: flex;
+        justify-content: space-between;
+    }
 
-		&__img {
-            flex: 0 1 470px;
-		}
-        &__img img{
+    &__img {
+        flex: 0 1 470px;
+        & img{
             width: 100%;
             height: 250px;
         }
+    }
 
-		&__body {
-            color: #fff;
-		}
 
-		&__title {
-            font-size: 60px;
-            line-height: 1.2;
+    &__body {
+        color: #fff;
+        padding-right: 10px;
+    }
+
+    &__title {
+        font-size: 60px;
+        line-height: 1.2;
+        text-shadow: 0px 1px 0px rgba(0,0,0,0.3);
+        margin: 0px 0px 38px 0px;
+    }
+
+    &__list {
+        & li{
             text-shadow: 0px 1px 0px rgba(0,0,0,0.3);
-            margin: 0px 0px 38px 0px;
-		}
-
-		&__list {
-            & li{
-                text-shadow: 0px 1px 0px rgba(0,0,0,0.3);
-                margin-bottom: 8px;
-            }
-            & li:last-child{
+            margin-bottom: 8px;
+            &:last-child{
                 margin-bottom: 0;
             }
-            & li::before{
+            &::before{
                 content: url('../img/check_icon.png');
                 width: 25px;
                 margin-right: 10px;
             }
-		}
+        }
+        
+    }
 }
+.about {
+
+    &__row {
+        padding: 50px 0px 40px 0px;
+        display: flex;}
+
+    &__img {
+        flex: 0 0 430px;
+        & img {
+            width: 100%;
+        }
+    }
+
+    &__body {
+        margin-left: 38px;
+    }
+
+    &__title {
+        margin-bottom: 28px;
+    }
+
+    &__text {
+        & p{
+            margin-bottom: 31px;
+        }
+        & p:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+
+
 .footer {
-    background-color: #f5f5f5;
+    
+    &{
+        background-color: #f5f5f5;
+    }
 
-		&__row {
-            height: 65px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-		}
+    &__row {
+        height: 65px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-		&__text {
-            font-size: 20px;
-            color: #445162;
-		}
+    &__text {
+        font-size: 20px;
+        color: #445162;
+    }
 }
